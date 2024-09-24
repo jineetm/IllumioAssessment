@@ -80,7 +80,3 @@ Port,Protocol,Count
 - Missing or Empty Lookup Table: If the lookup_table.csv is missing or empty, the script automatically generates a sample lookup table with common ports and protocols.
 -  File Not Found: If the flow log file or lookup table file is not found, an appropriate error message will be displayed.
 -   Incorrect Lookup Table Format: The script expects the lookup table to contain three columns: dstport, protocol, and tag. If these are missing, an error will be reported.
-
-
-License
-This project is licensed under the MIT License.
