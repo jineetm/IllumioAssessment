@@ -1,0 +1,14 @@
+Port,Protocol,Count
+25,tcp,2
+49154,tcp,1
+49155,tcp,1
+49156,tcp,1
+49157,udp,1
+49158,udp,1
+80,tcp,1
+1024,tcp,1
+443,tcp,1
+23,icmp,1
+110,tcp,1
+993,tcp,1
+143,udp,1
