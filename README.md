@@ -3,20 +3,19 @@ Flow Log Parser with Lookup Table
 This project is a Python-based tool for parsing network flow logs and mapping them to tags based on a lookup table. The tool generates statistics for tag counts and port/protocol combinations and outputs the results into CSV files.
 
 Features
-1)Flow Log Parsing: Reads flow logs in a specified format and extracts key information.
-2)Lookup Table Matching: Maps flow logs to tags using a lookup_file.csv file containing port and protocol information.
-3)Tag Count Generation: Outputs the count of flow logs associated with each tag.
-4)Port/Protocol Combination Count: Outputs the count of each unique port and protocol combination found in the flow logs.
-5)Sample Lookup Table Generation: If the lookup_table.csv file is missing or empty, the script automatically generates a sample lookup table.
+- Flow Log Parsing: Reads flow logs in a specified format and extracts key information.
+- Lookup Table Matching: Maps flow logs to tags using a lookup_file.csv file containing port and protocol information.
+- Tag Count Generation: Outputs the count of flow logs associated with each tag.
+- Port/Protocol Combination Count: Outputs the count of each unique port and protocol combination found in the flow logs.
+- Sample Lookup Table Generation: If the lookup_table.csv file is missing or empty, the script automatically generates a sample lookup table.
 
 
 Clone the repository or download the script:
 ```sh
-git clone https://github.com/jineetmt/IllumioAssessment.git
-cd flow-log-parser
+git clone https://github.com/jineetm/IllumioAssessment.git
 ```
 
-1) Usage
+### 1) Usage
 Prepare Input Files: Make sure you have the flow logs file (flow_logs.txt) and the lookup table file (lookup_table.csv).
 If the lookup_table.csv is missing or empty, the script will automatically create a sample lookup table.
 
@@ -28,10 +27,10 @@ python3 main.py
 
 The script will generate two output files:
 
-1)tag_counts_output.csv: Contains counts of each tag found in the flow logs.
-2)port_protocol_counts_output.csv: Contains counts of each port/protocol combination found in the flow logs.
+- tag_counts_output.csv: Contains counts of each tag found in the flow logs.
+- port_protocol_counts_output.csv: Contains counts of each port/protocol combination found in the flow logs.
 
-2) Input Files
+### 2) Input Files
 a) Flow Log File (flow_logs.txt):
 
 A space-separated text file containing flow log entries. Each entry must have fields including destination port and protocol number.
@@ -77,10 +76,10 @@ Port,Protocol,Count
 110,tcp,1
 ```
 
-3) Error Handling
-a) Missing or Empty Lookup Table: If the lookup_table.csv is missing or empty, the script automatically generates a sample lookup table with common ports and protocols.
-b) File Not Found: If the flow log file or lookup table file is not found, an appropriate error message will be displayed.
-c) Incorrect Lookup Table Format: The script expects the lookup table to contain three columns: dstport, protocol, and tag. If these are missing, an error will be reported.
+### 3) Error Handling
+- Missing or Empty Lookup Table: If the lookup_table.csv is missing or empty, the script automatically generates a sample lookup table with common ports and protocols.
+-  File Not Found: If the flow log file or lookup table file is not found, an appropriate error message will be displayed.
+-   Incorrect Lookup Table Format: The script expects the lookup table to contain three columns: dstport, protocol, and tag. If these are missing, an error will be reported.
 
 
 License
